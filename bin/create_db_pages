@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+const databases = require("../src/config/databases.json");
+
+const fs = require("fs").promises;
+
+// design_notes/0001_using_regular_links.md
+(async () => {
+  await fs.mkdir("build/databases");
+
+  for (const databaseSlug of Object.keys(databases)) {
+    await fs.copyFile("build/index.html", `build/databases/${databaseSlug}.html`);
+  };
+})();

@@ -1,0 +1,17 @@
+{
+  "name": "nested-child",
+  "description": "asdasd",
+  "columns": [
+    {
+      "name": "child_uuid",
+      "description": "Unique identifier of child id.",
+      "key": true,
+      "type": "integer"
+    },
+    {
+      "name": "nestedChildName",
+      "description": "Nested Child Name",
+      "type": "text"
+    }
+  ]
+}

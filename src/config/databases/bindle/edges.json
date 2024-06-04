@@ -1,0 +1,30 @@
+[
+    {
+        "source": "child", 
+        "sourceKey": "childUuid", 
+        "target": "nested-child", 
+        "targetKey": "child_uuid", 
+        "relation": "hasMany"
+    },
+    {
+        "source": "Parant",
+        "sourceKey": "uuid",
+        "target": "child",
+        "targetKey": "parent_uuid", 
+        "relation": "hasMany"
+    },
+    {
+        "source": "child",
+        "sourceKey": "parent_uuid",
+        "target": "Parant",
+        "targetKey": "uuid",
+        "relation": "hasOne"
+    },
+    {
+        "source": "child",
+        "sourceKey": "parent_uuid",
+        "target": "child",
+        "targetKey": "child_uuid",
+        "relation": "hasMany"
+    }
+]

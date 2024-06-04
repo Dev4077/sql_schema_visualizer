@@ -1,0 +1,24 @@
+{
+  "name": "child",
+  "description": "child table",
+  "columns": [
+    {
+      "name": "parent_uuid",
+      "description": "uuid",
+      "key": true,
+      "type": "text"
+    },
+    {
+      "name": "childUuid",
+      "description": "child id",
+      "key": true,
+      "type": "text"
+    },
+    {
+      "name": "childFullName",
+      "description": "Child fullName",
+      "type": "text"
+    }
+  ]
+}
+

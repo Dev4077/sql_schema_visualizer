@@ -1,0 +1,17 @@
+{
+  "name": "Parant",
+  "description": "All Parant recodes",
+  "columns": [
+    {
+      "name": "uuid",
+      "description": "Unique identifier of the Parant.",
+      "key": true,
+      "type": "text"
+    },
+    {
+      "name": "fullName",
+      "description": "Parant fullname",
+      "type": "text"
+    }
+  ]
+}
